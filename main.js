@@ -1,24 +1,22 @@
-let list = document.querySelector(".header-right")
-let hamburger = document.querySelector(".hamburger-menu")
-let cross = document.querySelector(".close")
+const openButton = document.querySelector(".header-right > a")
+const closeButton = document.querySelector(".close")
 const hamburgerMenu = document.querySelector('.hamburger-menu');
-// const mediaQuery = window.matchMedia('(max-width: 1000px)')
-// const mediaQueryB = window.matchMedia('(min-width: 1001px)')
 
-list.addEventListener("click",
+openButton.addEventListener("click",
     function(){
-        hamburgerMenu.classList.add('close');
+        hamburgerMenu.classList.add('active');
     }        
 )
 
-cross.addEventListener("click",
+closeButton.addEventListener("click",
     function(){
-        hamburgerMenu.classList.remove('close');
+        hamburgerMenu.classList.remove('active');
     }
 )
 
 
-
+// const mediaQuery = window.matchMedia('(max-width: 1000px)')
+// const mediaQueryB = window.matchMedia('(min-width: 1001px)')
 // list.addEventListener("click",
 //     function(){
 //         if(mediaQuery.matches){
